@@ -262,7 +262,7 @@ public class Account
 					switch(choice)
 					{
 						case 1: System.out.println("\nCurrent Checkings Account Balance: " + moneyFormat.format(checkingBalance));
-						System.out.println("\nAmount you want to deposit into your Savings Account: ");
+						System.out.println("\nAmount you want to Transfer into your Savings Account: ");
 						double amount = input.nextDouble();
 						if(!(amount <= 0) && (savingBalance + amount) > 0 && (checkingBalance - amount) > 0 && amount > 0)
 						{
@@ -293,7 +293,7 @@ public class Account
 						switch(choice)
 						{
 							case 1: System.out.println("\nCurrent Savings Account Balance: " + moneyFormat.format(savingBalance));
-							        System.out.println("\nAmount you want to deposit into your savings account: ");
+							        System.out.println("\nAmount you want to Transfer into your savings account: ");
 							        double amount = input.nextDouble();
 							        if(!(amount < 0) && (checkingBalance + amount) > 0 && (savingBalance - amount) > 0 && amount >=0)
 							        {
